@@ -1,0 +1,27 @@
+1. Networking is the process of connecting or linking devices so that they can communicate and to exchange data.
+2. Because it enables us to share resources like printer which will be cost effective and also to share information for example the internet basically these days all thing are done with the help of the internet .so it is important because it make our lives better and easy.
+3. B
+4. A network is the connection of 2 or more devices that allows for internal communication between the users of those devices. Whereas the internet is the global connection of multiple network that allows a user to access information remotely.
+5. It is a collection of networks. Because it connects multiple smaller networks allowing them to communicate and share data globally.
+6. Communication, entertainment, gaming
+7. Mesh topology: here every device is connected to other device. Communication is fast between the nodes but its cost is high.
+Star topology: all devices are connected to a single hub through a cable and this hub is the central node and all the other nods are connected to it. It is easy for fault identification but if the hub fails the system will crush down.
+Bus topology: every network device is connected to a single cable. The cost is less compared o other but security is low.
+8. B
+9. Advantage: provides security and privacy 
+                   High fault tolerance 
+                   Communication is fast between the nodes 
+Disadvantage: installation is difficult
+                        The cost is high
+10. LAN (Local Area Network): it is a network that covers a small area like home or school.
+          MAN (Metropolitan Area Network):a network that covers a campus or city.
+          WAN (Wide Area Network): it covers areas like countries example internet.
+11. LAN: because it fits in small places and it is easily manageable and cost effective than others.
+12. D
+13. Router: used to connect different networks together
+HUB: it is used to join multiple devices on the same LAN
+Switch: forwards data to its destination by examining the frames MAC address.
+Bridge: acts as an interconnection between two or more LANS
+14. HUB sends data to all of the devices connected by using broadcasting. While Switch sends the data to the intended device which makes switch more intelligent than HUB.
+15. True
+
