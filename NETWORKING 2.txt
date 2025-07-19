@@ -1,0 +1,115 @@
+1. STP has additional shielding around the pairs to reduce interference and it is also more expensive due to the extra shielding. While UTP has no shielding and is less expensive 
+2. Advantage: higher transmission rates over long distance 
+                         Low noise level 
+      Disadvantage: it is more labor intensive 
+                              Not all LAN system work readily over STP
+                              More expensive
+3. Coaxial cable is a type of cable with a of a core of copper wire surrounded by insulation, a braided metal shielding, and an outer cover. Where the Shielding protects transmitted data by absorbing stray electronic signals, called noise, so that they do not get onto the cable and distort the data.
+Uses: cable internet, cable TV networks
+4. BNC connector’s function is to provide secure quick connect or disconnect interface maintaining the shielding property of coaxial cable.  
+Uses: video surveillance system
+          Radio antenna connections 
+          Test equipment connections
+5. RJ45; has 8 pins and uses networking 
+RJ11: has 4 or 6 pins and uses telephony
+6. Cat 5e:  - Maximum data rate: 1 Gbps
+                   - Maximum range: 100 meters at 1 Gbps
+Cat 6: - Maximum data rate: 10 Gbps (up to 55 meters), 1 Gbps at 100 meters
+                  - Maximum range: 55 meters for 10 Gbps, 100 meters for 1 Gbps
+7. A, Single-mode fiber (SMF): uses a very small core (8-10 microns), Uses laser light source and it is designed for long-distance communication (up to 100 km) it is also more expensive but higher bandwidth
+B, Multi-mode fiber (MMF): uses larger core (50-62.5 microns), uses LED light source and shorter distance (up to 2 km) also less expensive but lower bandwidth.
+8. Their first difference is Light sourse. Single-mode uses lasers, multi-mode uses LEDs. Also Single-mode can transmit much farther since (100km > 2km). Another difference is cost and bandwidth single mode is more expensive and has higher bandwidth compare to multi-mode.
+9. It is immune to IMF: optical fibers carry digital data signals in the form of modulated pulses of light so it cannot be tapped, and its data cannot be stolen.
+Speed: Fiber-optic cable is good for very high-speed, high-capacity data transmission because of the purity of the signal and lack of signal attenuation.
+
+10. T568A:                      T568B:
+1. White Green              1. White Orange
+2. Green                         2. Orange
+3. White Orange            3. White Green
+4. Blue                           4. Blue
+5. White Blue                5. White Blue
+6. Orange                       6. Green
+7. White Brown             7. White Brown
+8. Brown                        8. Brown
+ 11. Straight through cable: to connect different devices
+    Example: Connecting a router to hub
+                    Connecting a server to switch
+12. Crossover cable: connects similar devices
+   Examples: pc to pc, switch to switch
+13. Crimping tool, cable tester, wire stripper
+14. A, pc to switch
+      B, pc to pc
+15. Cost: twisted par has the lowest where coaxial is medium but the fiber optic is the most expensive than the others,
+Speed: fiber optics has high speed compared to the others due to lack of signal attenuation. But coaxial has moderate and twisted pair has the lowest spped.
+Interference: twisted pair has moderate interference while the coaxial has some interference because they use shielding but the fiber optic is very resistance since it uses light instead of electrical signal.
+16. it is a conceptual framework that describes how data is transmitted between devices in a network. And also defines the procedures and structure how devices communicate.
+17. Simplex: TV
+      Half -duplex: walkie talkie
+      Full-duplex: telephone
+18. Simple half duplex is a two way communication but not simultaneously (one at a time) where as full duplex is a communication of both directions at once.
+19. They are essential because they define the rules for communication, handle error detection and correction and also provide security mechanisms.
+
+20. Sender: the device at generates the message. 
+      Message: the information being communicated
+      Medium: physical path for transmission (cable or wireless) 
+      Protocol: It is a set of rules that govern data communication. It represents an agreement or convention between the communicating devices
+      Receiver: It is the device that receives or accepts the message.
+21. Application layer
+      Presentation layer
+      Session layer
+      Transport layer
+      Network layer
+      Data link layer
+      Physical layer
+22. Application: HTTP
+      Transport: TCP
+      Network: IP
+      Datalink: Ethernet
+      Physical: fiber optic cable 
+23. Transport layer: It regulates information flow to ensure process-to- process connectivity between host applications reliably and accurately. Flow control / Error control at Source to destination level. its function is also Segmentation and reassembly of data.
+Protocols: UDP, TCP
+24. Network layer. 
+Role: enables routing of packets across different networks.
+         Provides logical addressing to identify devices on a network
+25. Transport: segment
+      Network: packet
+      Data link: frame
+      Physical: bits
+26. A, Router:
+  - Operates at Network Layer
+  - Connects different networks
+  - Uses IP addresses to forward packets
+  - Makes intelligent routing decisions
+B, Switch: 
+  - Operates at Data Link Layer 
+  - Connects devices within the same network
+  - Uses MAC addresses to forward frames
+  - Creates separate collision domains for each port
+C, Hub: 
+  - Operates at Physical Layer 
+  - Connects devices within the same network
+  - Broadcasts data to all ports
+  - Creates a single collision domain
+27. 1. Application: User selects file to send, application protocol (e.g., FTP) initiates transfer
+2. Presentation: File may be encrypted or compressed
+3. Session: Establishes, maintains, and terminates the connection
+4. Transport: Breaks data into segments, adds port numbers, ensures reliable delivery
+5. Network: Adds IP addresses, routes packets between networks
+6. Data Link: Adds MAC addresses, creates frames, handles local delivery
+7. Physical: Converts to bits, transmits over physical medium
+28. - Provides a standardized framework for understanding network communication
+      -Makes troubleshooting easier by isolating problems to specific layers
+      -Helps in learning and teaching networking concepts
+
+
+
+29. Post Office Analogy:
+1. Application: You write a letter (data) to a friend
+2. Presentation: You put it in an envelope (formatting)
+3. Session: You decide when to mail it (communication timing)
+4. Transport: Post office verifies address and stamps it (reliability)
+5. Network: Post office routes it to correct city (logical addressing)
+6. Data Link: Mail carrier delivers to correct street (physical addressing)
+7. Physical: Letter is physically transported by truck/plane
+30. Similarity: Both are layered models that divide network communication into functional components.
+Difference: OSI is theoretical, TCP/IP is based on actual protocols
