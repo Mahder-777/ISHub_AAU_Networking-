@@ -1,0 +1,93 @@
+1. an IP address is a unique numerical identifier that is assigned to each device connected to a network.
+importance: a, identification: it uniquely identifies a device on a network 
+            b, location addressing: it provides the location of a device in the network.
+
+2. address length:IPV4 has 32 bits(4bytes) whereas IPV6 has 128 bits(16bytes)
+   notation format:IPV4 has a decimal separated by a dot like 192.168.1.0 but IPV6 has a hexadecimal separated by a colon like 2001:0001:78BB:0370
+   available address:IPV4 has around 4.3 billion available address but IPV6 has 340 undecillion 
+
+3. 192= 192%2=0,96%2=0,48%2=0,24%2=0,12%2=0,6%2=0,3%2=1,1%2=1 = 11000000.                                                                                          
+   168= 168%2=0,84%2=0,42%2=0,21%2=1,10%2=0,5%2=1,2%2=0, 2%1=1 = 10101000.                                                                                             
+   10= 10%2=0,5%2=1,2%2=0,1%2=0 = 00001010                                                                                                                                        
+   1= 1%2=1,0%2=0 =00000001.                                                                                                                                                  
+
+4. 11000000= (2^7+2^6= 128+64) = 192
+   10101000= (2^3+2^5+2^7=8+32+128=168)= 168           = 192.169.1.2
+   00000001= (2^0)= 1
+   00000010= (2^1)= 2
+
+5. Class A: 1.0.0.0 - 126.255.255.255
+   Class B: 128.0.0.0 - 191.255.255.255
+   Class C: 192.0.0.0 - 223.255.255.255
+
+6. it falls between 128 and 191 so its class B
+
+7. public IP: is globally routable, assigned by ISPs and used for communication over the internet
+   private IP: it is reserved for internal network and is not routable on the internet
+   private IP ranges: Class A: 10.0.0.0 - 10.255.255.255
+                      Class B: 172.16.0.0 - 172.31.255.255
+                      Class C: 192.168.0.0 - 192.168.255.255
+
+8. The loop back address is used to test network software on the local device. it allows the device to communicate with itself.
+
+9. static IP: it is manually assigned and does not change e.g: server, printer
+   dynamic IP: it is assigned by DHCP and changes overtime(temporary) e.g:laptop 
+
+10. Class A: 255.0.0.0(/8)
+    Class B: 255.255.0.0(/16)
+    Class C: 255.255.255.0(/24)
+
+11. subnetting is the process of dividing a larger network into smaller subnets
+    Uses: to improve performance by reducing traffic
+          enhance security
+
+12. 2^8= 256 including network and broadcast address
+
+13. 2^8-2= 254 usable host addresses
+
+14. subnet= 2^2= 4
+
+15. original subnet mask: 255.255.255.0                   original IP: 192.168.1.0/24
+    
+borrowed bits= 3 so it makes =192.168.1.0/27
+                                 = 11111111.1111111.11111111.11100000 
+                                 = 255.255.255.224= final subnet mask
+
+16. hosts per subnet= 2^6-2= 64-2= 62 
+  Assuming it is class c /24 will be the default , Bits borrowed: 26 - 24 = 2 bits
+  Subnets = 2² = 4 subnets
+
+17. /26 = block size of 64( 2^(32-26))
+    So subnet range is: 192.168.10.64 – 192.168.10.127
+
+Network address: 192.168.10.64
+First usable IP: 192.168.10.65
+Last usable IP: 192.168.10.126
+Broadcast address: 192.168.10.12700
+
+18. /22 means block size = 2^(32-22) = 1024 addresses
+IPs span over 4 subnets of 256 addresses:
+10.0.0.0 – 10.0.0.255
+10.0.1.0 – 10.0.1.255
+10.0.2.0 – 10.0.2.255
+10.0.3.0 – 10.0.3.255
+Range: 10.0.0.0 – 10.0.3.255  
+
+19. a, 2 usable ips
+    b, 14 hosts per subnet  
+    
+20.a, 2^x= 510  x=9 so 9 subnets can be created
+   b, 32 - 9 = 23
+Borrowed bits: 23 - 20 = 3 bits
+Subnets = 2³ = 8 subnets
+23 = 11111111.11111111.11111110.00000000
+   = 255.255.254.0
+
+
+
+
+
+
+
+
+
