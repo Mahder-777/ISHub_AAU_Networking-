@@ -1,0 +1,186 @@
+1. A computer network is a collection of interconnected devices (like computers, servers, printers) that share data and resources through communication channels.
+Main purposes: Resource sharing, Communication 
+2. Area Coverage
+ Example LAN covers Small area (e.g., office). WAN Very large (country/world): the internet. MAN covers a city or large campus, City government network. PAN covers few meters like Bluetooth between phone and earbuds.
+3. Client-Server: it is a centralized model. Central server provides resources, clients request services and the server provides with the required resource. 
+            Peer-to-Peer (P2P): It is decentralized model. All computers act as equals (peers) and share data directly. 
+4. Centralized data access
+Efficient communication
+Resource sharing
+Cost saving 
+
+5.6.7 Star topology-all devices are connected to a central device (like a switch or hub).
+Bus topology-all devices are connected to a single central cable (called the backbone).
+Mesh topology-each device is connected to each other there is no central server.
+Ring topology: devices are connected in a circular loop and data travels in one direction.
+
+		Star: Advantage: failure of one node doesn't affect others
+	Disadvantage: if the hub or switch fails the entire network fails
+
+	
+		Bus: advantage: uses less cable and inexpensive	
+                                                                               Disadvantage: cable failure affects the network
+
+
+
+
+Star topology is most common.
+Because: Easy to add/remove devices
+                 Fault isolation is simple
+                 High performance with switches
+8. Switch: Connects multiple devices on a LAN and uses MAC addresses to forward data to the correct device.
+Router: Connects different networks, routes data using IP addresses, and provides internet access.
+Hub: Broadcasts incoming data to all ports (not smart like switch).
+Access Point: Allows wireless devices to connect to a wired network (Wi-Fi).
+9. modem-Converts digital data to/from analog.
+Routers -Connects multiple devices to a network and manages traffic
+10. Switch: Layer 2 (Data Link) — uses MAC addresses
+       Router: Layer 3 (Network) — uses IP addresses
+
+11. Transmission media are the physical or wireless pathways used to transmit data.
+1. Guided (Wired Media):
+Twisted Pair Cable – e.g., Ethernet cable (Cat5, Cat6)
+Coaxial Cable – e.g., used in cable TV 
+Fiber Optic Cable – e.g., used for high-speed internet
+2. Unguided (Wireless Media):
+Radio waves – Wi-Fi, Bluetooth
+Microwaves – Point-to-point communication
+Infrared – TV remotes, short-range communication
+12. UTP (Unshielded Twisted Pair): No shielding, cheaper, more flexible, but more susceptible to interference
+  STP (Shielded Twisted Pair): Has foil shielding, more expensive, less flexible, but better at resisting interference.
+13. BNC: Used with coaxial cables (older Ethernet, CCTV systems)
+      RJ45: Used with twisted pair cables (modern Ethernet networks)
+14. Single-mode: Uses a single light path (laser), thinner core (9µm), longer distances (up to 100km), more expensive
+       Multi-mode: Uses multiple light paths (LED), thicker core (50-62.5µm), shorter distances (up to 2km), less expensive
+
+15. - Cable TV/internet (HFC networks)
+- Older Ethernet networks (10BASE2, 10BASE5)
+- CCTV systems
+- Radio antenna connections
+16. 
+T568A:                      T568B:
+1. White Green                   1. White Orange
+2. Green                             2. Orange
+3. White Orange                3. White Green
+4. Blue                               4. Blue
+5. White Blue                    5. White Blue
+6. Orange                           6. Green
+7. White Brown                 7. White Brown
+8. Brown                            8. Brown
+
+17. Straight-through cable: Connects different devices (e.g., PC to switch).
+      Crossover cable: Connects similar devices (e.g., PC to PC, switch to switch).
+Purpose: Ensures transmit and receive wires are correctly matched for communication.
+18. Crimping tool – attaches RJ45 connectors to cable ends
+      Cable tester – checks wiring continuity and correctness
+      Wire stripper – removes insulation without damaging wires
+19. - Simplex: One-way communication (e.g., keyboard to computer, TV broadcast)
+    - Half-Duplex: Two-way communication, but only one direction at a time (e.g., walkie-talkie)
+   - Full-Duplex: Simultaneous two-way communication (e.g., telephone conversation, modern      Ethernet)
+20. Sender – Originates the message
+Receiver – Accepts the message
+Message – Information being communicated
+Medium – Channel through which message travels
+Protocol – Set of rules for communication
+21. Protocols define rules for communication including:
+- How to establish/maintain/terminate connections
+- Data format and encoding
+- Error handling
+- Flow control
+Without protocols, devices wouldn't be able to understand each other.
+22. - Application: User selects file to send, application protocol (e.g., FTP) initiates transfer 
+      - Presentation: File may be encrypted or compressed
+      -Session: Establishes, maintains, and terminates the connection 
+      -Transport: Breaks data into segments, adds port numbers, ensures reliable delivery
+       -Network: Adds IP addresses, routes packets between networks 
+       - Data Link: Adds MAC addresses, creates frames, handles local delivery
+       -Physical: Converts to bits, transmits over physical medium
+23. - HTTP: Application                                                           - Ethernet: Data Link 
+     - IP: Network                                                                        - DNS: Application 
+    - TCP: Transport                                                                   - ARP: Network 
+24. Function: Provides end-to-end communication services for applications.
+      Protocols: TCP and UDP
+25. Similarity: Both are layered models for network communication.
+Difference: OSI has 7 layers while TCP/IP has 4 layers.
+26. Application Layer 
+      Transport Layer
+      Internet Layer 	
+      Network Access Layer
+27. In OSI model it is handled in network layer (3)while in TCP/IP it is handled in internet layer(3).
+28. IP address: Logical address assigned to devices for network communication.
+* Ipv4. -32 bits (4byte),Decimal dotted ,~4.3 billion
+* Ipv6-128 bits (16 bytes),Decimal dotted  Hexa decimal doted,~340 undecillion
+29. 192%2=0,96%2=0,48%2=0,24%2=0,12%2=0,6%2=0,3%2=1,1%2=1=11000000. 168%2=0,84%2=0,42%2=0,21%2=1,10%2=0,5%2=1,2%2=0, 2%1=1....10101000. 1%2=1,0%2=0.......00000001,1%2=1,0%2=0.......00000001
+192.168.1.1=11000000.10101000.0000001.0000001
+30. 2^7+2^6=192, 2^7+2^5+2^3=168, 2^0=1, 2^2=4......192.168.1.4
+31. Class A: 1.0.0.0 to 126.255.255.255 
+      Class B: 128.0.0.0 to 191.255.255.255 
+      Class C: 192.0.0.0 to 223.255.255.255 
+32. - Static: Manually assigned, doesn't change. Used for servers, network devices.
+- Dynamic: Automatically assigned (usually by DHCP), can change. Used for client devices.
+33. Private IPs are non-routable on the Internet, used within private networks:
+- Class A: 10.0.0.0 - 10.255.255.255
+- Class B: 172.16.0.0 - 172.31.255.255
+- Class C: 192.168.0.0 - 192.168.255.255
+34. Loopback address (127.0.0.1) routes traffic back to the same device. Used for:
+- Testing network software
+- Local service access
+- Troubleshooting
+35. /24 = 255.255.255.0  
+Host bits: 32-24 = 8  
+Hosts: 2? - 2 = 254
+36. /26 = 255.255.255.192  
+Host bits: 32-26 = 6  
+Hosts: 2? - 2 = 62
+37. 192.168.20.0/27.       /27 = 255.255.255.224 ? 32 IPs per block ? 30 usable hosts
+Network: 192.168.20.0  
+Broadcast address = last IP in the range = 192.168.20.31 
+38. Borrowed bits: 3   ? New subnet: /27
+Subnets: 2³ = 8
+39. MAC (Media Access Control) address:                                       IP address:
+- 48-bit physical address                                                        - Logical address (32-bit for IPv4, 128-bit for IPv6)
+- Burned into network interface                                         - Assigned by admin or DHCP
+- Layer 2 (Data Link) address                                               - Layer 3 (Network) address
+- Used for local network delivery                                        - Used for end-to-end delivery
+40.  ARP (Address Resolution Protocol) resolves IP addresses to MAC addresses. When a device needs to send to an IP, it broadcasts an ARP request to learn the destination's MAC address.
+41. Hyper Text Transfer Protocol (HTTP) It is used to transfer web pages and data between web servers and clients (browsers) on port 80.
+42. Translates domain names into IP addresses. It simplifies users search rather than IP address we can search by name 
+43. Dynamic Host Configuration Protocol (DHCP)-Automatically assigns IP addresses, subnet masks, default gateways, and DNS settings to devices on a network. Saves time—no need to configure each device manually.
+44. SSH: Secure remote access
+DNS: Resolves domain names to IP addresses.
+DHCP: Assigns IP configurations automatically to network devices.
+TCP: Ensures reliable delivery of data between devices.
+SMTP: Email sending
+45. Switching uses Mac address while routing uses IP address. Switching works on same LAN while routing connect different networks.
+46. VLAN Allows to divide a physical network into multiple logical networks. 
+Uses:  to improve security, reduce broadcast traffic, and organize devices more efficiently
+47. A default gateway is the IP address of a router that connects a local network to external networks (like the internet).
+Importance: Without it, devices can only communicate within the same subnet.
+                       It enables external communication (e.g., to websites or other networks). 
+48. Phishing – Tricking users into revealing sensitive information.
+Malware – Malicious software like viruses, worms, ransomware.
+Man-in-the-Middle (MitM) – Attacker intercepts communication between two parties.
+49. A firewall is a security system (hardware or software) that monitors and controls incoming/outgoing traffic based on predefined rules.
+How it protects: Blocks unauthorized access
+                              Filters malicious traffic
+                              Enforces security policies
+50. - Detects and removes malware
+      - Prevents infection from network sources
+      - Scans network traffic for threats
+      - Provides real-time protection
+51. NAT translates private IP addresses to public IP addresses for Internet access. It conserves IPv4 addresses by allowing many devices to share one public IP.
+Commonly used in:
+- Home routers
+- Corporate networks
+- Anywhere private IPs need Internet access
+
+
+
+ 
+	
+
+ 
+
+
+
+
